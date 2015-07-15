@@ -15,6 +15,7 @@ import java.util.Scanner;
  * 7. keyWord - data must be changed randomly or with reminder to change for user
  * 8. clean code
  * 9. GUI
+ * 10. Unit tests
  */
 public class Password_Main {
 
