@@ -1,3 +1,4 @@
+import java.security.SecureRandom;
 import java.util.Scanner;
 
 /*
@@ -16,7 +17,7 @@ import java.util.Scanner;
  * 8. clean code
  * 9. GUI
  * 10. Unit tests
- * 11. Change Random to SecureRandom
+ * DONE 11. Change Random to SecureRandom
  */
 public class Password_Main {
 
@@ -63,11 +64,10 @@ public class Password_Main {
 	 * 
 	 * @param a - password length, defined by user
 	 */
-	public static char[] randomChar(char[] l, char[] k, int a) {
-
-		
+	public static char[] randomChar(char[] l, char[] k, int a) {		
 
 		char[] selectedChar = new char[a];
+		SecureRandom randomQualifier = new SecureRandom();
 
 		/*
 		 * Tip: The following tests required: 1. - all characters upper or lower
@@ -76,7 +76,7 @@ public class Password_Main {
 		 */
 
 		for (int i = 0; i < selectedChar.length; i++) {
-			int key = (int) (Math.random() * lettersArrayLength);
+			int key = (int) (randomQualifier.nextDouble() * lettersArrayLength);
 			selectedChar[i] = l[key];
 			for (int j = 0; j < k.length; j++) {
 				if (selectedChar[i] == k[j]) {
