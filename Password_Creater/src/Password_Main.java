@@ -16,6 +16,7 @@ import java.util.Scanner;
  * 8. clean code
  * 9. GUI
  * 10. Unit tests
+ * 11. Change Random to SecureRandom
  */
 public class Password_Main {
 
