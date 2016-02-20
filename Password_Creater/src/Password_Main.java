@@ -25,7 +25,7 @@ public class Password_Main {
 	private static final char[] specialCharacters = {'!',',','.',':',';','=','+','?','-','\''};
 	
 	// Key word or list of characters which must be upper case
-	private static final char[] keyWord = { 'o', 'v', 'e', 'r', 'f', 'l', 'w' };
+	private static final char[] keyWord = { 'a', 'b', 'k', 'r', 'f', 'l', 'w' };
 	private static int passworLength;
 	private static final int lettersArrayLength = letters.length;
 	private static int specialCharsAllowed;
@@ -39,9 +39,10 @@ public class Password_Main {
 		System.out.println("Provide password length and put '1' if special characters ex. \"!,.:;=+?-'':\" allowed in password: ");
 
 		passworLength = in.nextInt();
-		//specialCharsAllowed = in.nextInt(); - CONTINUE HERE
+		//specialCharsAllowed = in.nextInt();
 		
 
+		
 		while (passworLength < 10) {
 			System.out.println("Password length must be more than 10!" + "\n");
 
