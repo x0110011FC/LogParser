@@ -5,13 +5,12 @@ import org.junit.Test;
 public class Password_MainTest {
 
 	@Test
-	public void testMain() {
-		fail("Not yet implemented");
-	}
-
-	@Test
 	public void testRandomChar() {
-		fail("Not yet implemented");
+		Password_Main tester = new Password_Main();
+		char[] txt = Password_Main.randomChar(tester.getLetters(), tester.getKeyword(), 15);
+		assertEquals("Expected 15", 15, txt.length);
+		
+		
 	}
 
 }

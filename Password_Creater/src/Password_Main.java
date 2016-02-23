@@ -3,27 +3,13 @@ import java.util.Scanner;
 
 /*
  * This program creates a password according to specified logic.
- * 
- * Logic description:
- * 
- * DONE 1. list of random characters
- * DONE 2. some characters in upper case - depends of 'keyWord'
- * 3. random numbers of digits
- * DONE 4. random 'hash #' character in password.
- * DONE 5. password length defined by user
- * 6. add special characters like '!,.:;=+?-'' - merge or add two arrays @letters and @specialCharacters
- * when special characters allowed in passsword
- * 7. keyWord - data must be changed randomly or with reminder to change for user
- * 8. clean code
- * 9. GUI
- * 10. Unit tests
- * DONE 11. Change Random to SecureRandom
  */
 public class Password_Main {
 
 	private static final char[] letters = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 			'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
 			'v', 'w', 'x', 'y', 'z','#' };
+
 	private static final char[] specialCharacters = {'!',',','.',':',';','=','+','?','-','\''};
 	
 	// Key word or list of characters which must be upper case
@@ -31,6 +17,15 @@ public class Password_Main {
 	private static int passworLength;
 	private static final int lettersArrayLength = letters.length;
 	private static int specialCharsAllowed;
+	
+	public char[] getLetters() {
+		return letters;
+	}
+
+	public char[] getKeyword() {
+		return keyWord;
+	}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
