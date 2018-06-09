@@ -1,2 +1,2 @@
-# testRep
+# LogParser
 test repository
